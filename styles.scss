@@ -1,0 +1,147 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+// Variables
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$light-gray: hsl(0, 0%, 95%);
+$bright-orange: hsl(31, 77%, 52%);
+$cyan: hsl(184 100% 69%);
+$dark-gray: hsl(0 0% 17%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+@mixin darkmode {
+    @if (darkmode) {
+        @media (prefers-color-scheme: dark) {
+            @content
+        }
+
+    }
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: $light-gray;
+    color: $transparent-white;
+
+    @include darkmode {
+        background-color: $dark-gray;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 50px auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    max-width: 730px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+section {
+    padding: 30px;
+    position: relative;
+
+    svg,
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: $light-gray;
+        font-family: 'Big Shoulders Display', 'cursive';
+        font-size: 30px;
+    }
+
+    p {
+        line-height: 19px;
+        margin-bottom: 110px;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: 1.5px solid $light-gray;
+        border-radius: 50px;
+        background-color: $light-gray;
+        position: absolute;
+        bottom: 35px;
+        font-family: 'Lexend Deca', sans-serif;
+        cursor: pointer;
+
+        &:hover {
+            background-color: transparent;
+            color: $transparent-white
+        }
+    }
+}
+
+.sedans {
+    background-color: $bright-orange;
+
+    button {
+        color: $bright-orange;
+    }
+}
+
+.suvs {
+    background-color: $dark-cyan;
+
+    button {
+        color: $dark-cyan;
+    }
+}
+
+.luxury {
+    background-color: $very-dark-cyan;
+
+    button {
+        color: $very-dark-cyan;
+    }
+}
+
+footer {
+    font-size: 11px;
+    text-align: center;
+    padding: 20px 0;
+    color: $very-dark-cyan;
+
+    @include darkmode() {
+        color: $light-gray;
+    }
+
+    a {
+        color: $dark-cyan;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        @include darkmode() {
+            color: $cyan;
+        }
+    }
+}
+
+@media (max-width: 597px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 100%));
+    }
+}

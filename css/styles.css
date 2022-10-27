@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 13px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0deg, 0%, 95%);
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: hsl(0deg, 0%, 17%);
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 50px auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  max-width: 730px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+section {
+  padding: 30px;
+  position: relative;
+}
+section svg,
+section h1 {
+  margin-bottom: 20px;
+}
+section h1 {
+  color: hsl(0deg, 0%, 95%);
+  font-family: "Big Shoulders Display", "cursive";
+  font-size: 30px;
+}
+section p {
+  line-height: 19px;
+  margin-bottom: 110px;
+}
+section button {
+  padding: 10px 20px;
+  border: 1.5px solid hsl(0deg, 0%, 95%);
+  border-radius: 50px;
+  background-color: hsl(0deg, 0%, 95%);
+  position: absolute;
+  bottom: 35px;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+}
+section button:hover {
+  background-color: transparent;
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+.sedans {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.sedans button {
+  color: hsl(31deg, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.suvs button {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.luxury button {
+  color: hsl(179deg, 100%, 13%);
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+  padding: 20px 0;
+  color: hsl(179deg, 100%, 13%);
+}
+@media (prefers-color-scheme: dark) {
+  footer {
+    color: hsl(0deg, 0%, 95%);
+  }
+}
+footer a {
+  color: hsl(184deg, 100%, 22%);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+@media (prefers-color-scheme: dark) {
+  footer a {
+    color: hsl(184deg, 100%, 69%);
+  }
+}
+
+@media (max-width: 597px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 100%));
+  }
+}/*# sourceMappingURL=styles.css.map */
