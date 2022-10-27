@@ -29,8 +29,8 @@ Users should be able to:
 
 ![](./img/screenshot-desktop.png)
 
-- Solution URL: [Maame's 3-Column Preview Card solution](https://mbonamensa.github.io/fem_qr-code)
-- Live Site URL: [Frontend Mentor | 3-Column Preview Card by Maame](https://mbonamensa.github.io/fem_qr-code)
+- Solution URL: [Maame's 3-Column Preview Card solution](https://mbonamensa.github.io/fem_3-column-preview-card)
+- Live Site URL: [Frontend Mentor | 3-Column Preview Card by Maame](https://mbonamensa.github.io/3-column-preview-card)
 - Figma file: [I created my own figma file](https://www.figma.com/file/i9c0GEh9Dg1nvkwk4g4ewE/Frontend-Mentor---3-column-Preview-Card?node-id=0%3A1)
 
 
