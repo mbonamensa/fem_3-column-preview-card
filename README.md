@@ -57,5 +57,5 @@ I'm not closing my mind to grids anymore, I am going to use them together with f
 ## Author
 
 - Website - [Maame Yaa Serwaa Bona-Mensa](https://mbonamensa.netlify.app)
-- Frontend Mentor - [@mbonamensa](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@mys_bm](https://www.twitter.com/mys_mb)
+- Frontend Mentor - [@mbonamensa](https://www.frontendmentor.io/profile/mbonamensa)
+- Twitter - [@mys_bm](https://www.twitter.com/mys_bm)
